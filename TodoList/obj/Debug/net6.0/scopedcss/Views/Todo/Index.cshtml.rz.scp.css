@@ -1,0 +1,54 @@
+:root[b-hv2znhx9oa] {
+    --fc: black;
+    --op: 0.4;
+}
+*[b-hv2znhx9oa] {
+    text-align: center;
+    /*text-transform: capitalize;*/
+    text-transform: uppercase;
+    user-select: none;
+}
+#progress[b-hv2znhx9oa] {
+    color: orange;
+    background-color: rgba(255, 106, 0,0.3);
+}
+
+#ignore[b-hv2znhx9oa] {
+    color: gray;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#postpone[b-hv2znhx9oa] {
+    color: violet;
+    background-color: rgba(255,0,255,0.3);
+}
+
+#undone[b-hv2znhx9oa] {
+    color: yellow;
+    background-color: rgba(255,255,0,0.3);
+}
+
+#done[b-hv2znhx9oa] {
+    color: lightgreen;
+    background-color: rgba(0,255,0,0.3);
+}
+#progress:hover[b-hv2znhx9oa] {
+    background: orange;
+    color: var(--fc);
+}
+#ignore:hover[b-hv2znhx9oa] {
+    background: gray;
+    color: var(--fc);
+}
+#postpone:hover[b-hv2znhx9oa] {
+    background: violet;
+    color: var(--fc);
+}
+#undone:hover[b-hv2znhx9oa] {
+    background: yellow;
+    color: var(--fc);
+}
+#done:hover[b-hv2znhx9oa] {
+    background: lightgreen;
+    color: var(--fc);
+}

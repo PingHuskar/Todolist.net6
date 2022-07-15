@@ -1,0 +1,54 @@
+﻿:root {
+    --fc: black;
+    --op: 0.4;
+}
+* {
+    text-align: center;
+    /*text-transform: capitalize;*/
+    text-transform: uppercase;
+    user-select: none;
+}
+#progress {
+    color: orange;
+    background-color: rgba(255, 106, 0,0.3);
+}
+
+#ignore {
+    color: gray;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#postpone {
+    color: violet;
+    background-color: rgba(255,0,255,0.3);
+}
+
+#undone {
+    color: yellow;
+    background-color: rgba(255,255,0,0.3);
+}
+
+#done {
+    color: lightgreen;
+    background-color: rgba(0,255,0,0.3);
+}
+#progress:hover {
+    background: orange;
+    color: var(--fc);
+}
+#ignore:hover {
+    background: gray;
+    color: var(--fc);
+}
+#postpone:hover {
+    background: violet;
+    color: var(--fc);
+}
+#undone:hover {
+    background: yellow;
+    color: var(--fc);
+}
+#done:hover {
+    background: lightgreen;
+    color: var(--fc);
+}

@@ -21,10 +21,22 @@
             <input asp-for="@Model.Task" class="form-control">
             <span asp-validation-for="@Model.Task" class="text-danger"></span>
         </div>
+         <div>
+            <label asp-for="Status" class="form-label"></label>
+            @*<input asp-for="Status" class="form-control">*@
+            <select asp-for="Status" class="form-control">
+                <option value="undone" selected>Undone</option>
+                <option value="progress">In Progress</option>
+                <option value="postpone">Postpone</option>
+                <option value="ignore">Ignore</option>
+                <option value="done">Done</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
         <div>
 
             <label asp-for="@Model.Date" class="form-label"></label>
-            <input asp-for="@Model.Date" class="form-control">
+            <input asp-for="@Model.Date" class="form-control" type="date">
             <span asp-validation-for="@Model.Date" class="text-danger"></span>
         </div>
 

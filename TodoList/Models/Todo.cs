@@ -11,6 +11,8 @@ namespace TodoList.Models
         [MaxLength(30)]
         [Required(ErrorMessage = "Plz give this task a name")]
         public string Task { get; set; }
+        
+        public string Status { get; set; }
         [Display(Name = "Due")]
         public string Date { get; set; }
     }

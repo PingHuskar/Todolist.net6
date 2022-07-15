@@ -20,9 +20,20 @@
             <span asp-validation-for="Task" class="text-danger"></span>
         </div>
         <div>
-
+            <label asp-for="Status" class="form-label"></label>
+            @*<input asp-for="Status" class="form-control">*@
+            <select asp-for="Status" class="form-control">
+                <option value="undone">Undone</option>
+                <option value="progress">In Progress</option>
+                <option value="postpone">Postpone</option>
+                <option value="ignore">Ignore</option>
+                <option value="done">Done</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+        <div>
             <label asp-for="Date" class="form-label"></label>
-            <input asp-for="Date" class="form-control">
+            <input asp-for="Date" class="form-control" type="date">
             <span asp-validation-for="Date" class="text-danger"></span>
         </div>
 

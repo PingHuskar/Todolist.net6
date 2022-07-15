@@ -59,3 +59,4 @@ C:\Users\Thanapat-PC\source\repos\TodoList\TodoList\obj\Debug\net6.0\refint\Todo
 C:\Users\Thanapat-PC\source\repos\TodoList\TodoList\obj\Debug\net6.0\TodoList.pdb
 C:\Users\Thanapat-PC\source\repos\TodoList\TodoList\obj\Debug\net6.0\TodoList.genruntimeconfig.cache
 C:\Users\Thanapat-PC\source\repos\TodoList\TodoList\obj\Debug\net6.0\ref\TodoList.dll
+C:\Users\Thanapat-PC\source\repos\TodoList\TodoList\obj\Debug\net6.0\scopedcss\Views\Todo\Index.cshtml.rz.scp.css
