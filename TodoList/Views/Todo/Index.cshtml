@@ -1,0 +1,57 @@
+﻿@*@model IEnumerable<WebApplication2.Models.Todo>*@
+@model IEnumerable<Todo>
+@{
+    ViewData["Title"] = "Todo List";
+}
+<table class="table">
+     <thead>
+    <tr>
+        <th scope="col">@Html.DisplayNameFor(model => model.TodoID)</th>
+        <th scope="col">@Html.DisplayNameFor(model => model.Task)</th>
+        <th scope="col">@Html.DisplayNameFor(model => model.Date)</th>
+        <th scope="col">Do</th>
+
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var Todotask in Model) {
+    <tr>
+    <td>@Todotask.TodoID</td>
+    <td>@Todotask.Task</td>
+    <td>@Todotask.Date</td>
+    <td>
+        <a asp-action="Update" asp-route-id="@Todotask.TodoID" class="btn btn-warning">Edit</a>
+        <a onclick="deleteFriend(@Todotask.TodoID);" class="btn btn-danger">Delete</a>
+    </td>
+    </tr>
+}
+</tbody>
+</table>
+@section Scripts {
+    <script>
+        //function doneTask(id) {
+        //    $.ajax({
+        //        url: `/todo/Done/${id}`,
+        //        method: 'Put',
+        //        success: function(data) { 
+        //            if (data.success) {
+        //                location.reload();
+        //            }
+        //        },
+        //        error: function(err) { alert(err); }
+        //    })
+        //}
+        function deleteFriend(id) {
+            $.ajax({
+                url: `/todo/Delete/${id}`,
+                method: 'Delete',
+                success: function(data) { 
+                    if (data.success) {
+                        location.reload();
+                    }
+                },
+                error: function(err) { alert(err); }
+            })
+        }
+    </script>
+}

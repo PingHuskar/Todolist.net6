@@ -1,0 +1,34 @@
+﻿@model Todo
+@{
+    ViewData["Title"] = "Update a Todo Task";
+}
+<div>
+    <h1>Update a Task</h1>
+    <form method="post" asp-action="Update">
+        <input asp-for="TodoID" class="form-control" hidden>
+        <div>
+
+            <label asp-for="TodoID" class="form-label"></label>
+            <input asp-for="TodoID" class="form-control" disabled>
+            <span asp-validation-for="TodoID" class="text-danger"></span>
+        </div>
+
+
+        <div>
+            <label asp-for="Task" class="form-label"></label>
+            <input asp-for="Task" class="form-control">
+            <span asp-validation-for="Task" class="text-danger"></span>
+        </div>
+        <div>
+
+            <label asp-for="Date" class="form-label"></label>
+            <input asp-for="Date" class="form-control">
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
+        <div class="mt-5">
+            <button type="submit" class="btn btn-info">Save</button>
+            <a asp-action="Index" class="btn btn-danger">Back</a>
+        </div>
+    </form>
+</div>
