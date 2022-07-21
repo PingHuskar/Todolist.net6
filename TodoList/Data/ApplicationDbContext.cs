@@ -5,6 +5,7 @@ namespace TodoList.Data
 {
     public class ApplicationDbContext : DbContext
     {
+        //ctor
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 

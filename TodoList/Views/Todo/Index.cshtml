@@ -10,6 +10,7 @@
         <th scope="col">@Html.DisplayNameFor(model => model.Task)</th>
         <th scope="col">@Html.DisplayNameFor(model => model.Status)</th>
         <th scope="col">@Html.DisplayNameFor(model => model.Date)</th>
+        <th scope="col">@Html.DisplayNameFor(model => model.CreatedDateTime)</th>
         <th scope="col">Do</th>
 
     </tr>
@@ -21,6 +22,7 @@
     <td><h4>@Todotask.Task</h4></td>
     <td id="@Todotask.Status"><h4>@Todotask.Status</h4></td>
     <td>@Todotask.Date</td>
+    <td>@Todotask.CreatedDateTime</td>
     <td>
         <a asp-action="Update" asp-route-id="@Todotask.TodoID" class="btn btn-warning">Edit</a>
         <a onclick="deleteFriend(@Todotask.TodoID);" class="btn btn-danger">Delete</a>

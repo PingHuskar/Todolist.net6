@@ -5,7 +5,10 @@ namespace TodoList.Controllers
 {
     public class TodoController : Controller
     {
+        // Idea
+        // connect database => table = Tolist
         private readonly ApplicationDbContext _context;
+        //ctor
         public TodoController(ApplicationDbContext context) // public classs ... => public ... 
         {
             _context = context;
